@@ -2,57 +2,53 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover" />
   
   <!-- Primary Meta Tags -->
-  <title>💍 Wedding Invitation | Arpit &amp; Mrudula</title>
-  <meta name="title" content="💍 Wedding Invitation | Arpit &amp; Mrudula" />
-  <meta name="description" content="Inspired by the divine beauty of Ayodhya's Ram Mandir. Join us as Arpit &amp; Mrudula take their sacred vows. Explore the temple mandapam, festivities schedule, and RSVP." />
-  <meta name="theme-color" content="#b34b1e" />
+  <title>💍 Arpit &amp; Mrudula — Wedding Invitation</title>
+  <meta name="title" content="💍 Arpit &amp; Mrudula — Wedding Invitation" />
+  <meta name="description" content="Inspired by the divine beauty of Ayodhya's Ram Mandir. Join us as Arpit &amp; Mrudula celebrate their sacred wedding vows. Explore the temple courtyard, schedule, and RSVP." />
+  <meta name="theme-color" content="#4a180e" />
 
   <!-- WhatsApp / Open Graph Rich Preview Card -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://vinayv9.github.io/wedding-invite/" />
   <meta property="og:title" content="🛕 Sacred Wedding Invitation: Arpit &amp; Mrudula" />
-  <meta property="og:description" content="Where love begins, blessings lead the way. Join us under divine temple auspices as Arpit &amp; Mrudula celebrate their sacred union." />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=1200&h=630&q=80" />
+  <meta property="og:description" content="Where love begins, blessings lead the way. Join us under divine temple auspices as Arpit &amp; Mrudula celebrate their holy matrimony." />
+  <meta property="og:image" content="https://framerusercontent.com/images/lKVzZvE9zjHal1zLmfO4koCjo.webp" />
   <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
+  <meta property="og:image:height" content="675" />
 
-  <!-- Fonts: High-Contrast Royal Display, Sanskrit Serif, Clean Sans -->
+  <!-- Google Fonts: Display Serif, Devanagari & Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Rozha+One&family=Montserrat:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet" />
 
   <style>
     /* ==========================================================================
-       AYODHYA RAM MANDIR THEME PALETTE
-       Terracotta Sandstone, Divine Saffron, Antique Brass, Deep Crimson & Ivory
+       AUTHENTIC RAM MANDIR COLOR PALETTE & DESIGN TOKENS
        ========================================================================== */
     :root {
-      --sandstone-light: #faf2ea;
-      --sandstone-base: #f5e4d3;
-      --sandstone-carved: #dfbe9f;
-      --temple-saffron: #c85a17;
-      --saffron-deep: #a8420c;
-      --saffron-gold: #e27d2c;
-      --royal-maroon: #52131b;
-      --crimson-accent: #781c28;
-      --brass-gold: #cba135;
-      --brass-gold-light: #fff0a8;
+      --bg-cream: #fbf5ee;
+      --bg-sandstone: #f4e6d4;
+      --sandstone-dark: #d5b89a;
+      --terracotta: #b35422;
+      --saffron-sacred: #c36f32;
+      --royal-maroon: #4a180e;
+      --deep-crimson: #681d18;
+      --antique-gold: #c59b27;
+      --gold-light: #fbeea8;
+      --text-dark: #2c1a14;
+      --text-muted: #6b5349;
       --gold-gradient: linear-gradient(135deg, #c59b27 0%, #fae58c 35%, #d4af37 70%, #9e7415 100%);
-      --gold-text: linear-gradient(135deg, #d4af37 0%, #fff7d6 50%, #aa771c 100%);
-      --text-dark: #2a1612;
-      --text-muted: #6e564d;
-      --card-bg: #ffffff;
-      --shadow-subtle: 0 4px 20px rgba(82, 19, 27, 0.08);
-      --shadow-elevated: 0 14px 40px rgba(82, 19, 27, 0.16);
-      --shadow-gold: 0 0 30px rgba(226, 125, 44, 0.35);
+      --gold-text-grad: linear-gradient(135deg, #d4af37 0%, #fff7d6 50%, #aa771c 100%);
+      --shadow-sm: 0 4px 15px rgba(74, 24, 14, 0.08);
+      --shadow-md: 0 12px 35px rgba(74, 24, 14, 0.14);
+      --shadow-lg: 0 20px 50px rgba(74, 24, 14, 0.22);
       --radius-sm: 8px;
       --radius-md: 18px;
       --radius-lg: 28px;
-      --radius-jharokha: 160px 160px 20px 20px;
-      --transition-smooth: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+      --radius-jharokha: 140px 140px 16px 16px;
     }
 
     *, *::before, *::after {
@@ -69,31 +65,31 @@
 
     body {
       font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background-color: var(--sandstone-light);
+      background-color: var(--bg-cream);
       color: var(--text-dark);
       line-height: 1.6;
       overflow-x: hidden;
-      position: relative;
+      width: 100%;
     }
 
+    /* Typography */
     h1, h2, h3, .font-cinzel {
       font-family: 'Cinzel Decorative', 'Cormorant Garamond', Georgia, serif;
-      letter-spacing: 0.04em;
-    }
-
-    .font-devanagari {
-      font-family: 'Rozha One', Georgia, serif;
-    }
-
-    .font-script {
-      font-family: 'Great Vibes', cursive;
     }
 
     .font-serif {
       font-family: 'Cormorant Garamond', Georgia, serif;
     }
 
-    /* Fullscreen Animated Petals & Temple Sparkles Canvas */
+    .font-script {
+      font-family: 'Great Vibes', cursive;
+    }
+
+    .font-devanagari {
+      font-family: 'Rozha One', Georgia, serif;
+    }
+
+    /* Ambient Rose Petals & Golden Sparkles Canvas */
     #ambient-canvas {
       position: fixed;
       top: 0;
@@ -101,9 +97,10 @@
       width: 100%;
       height: 100%;
       pointer-events: none;
-      z-index: 15;
+      z-index: 25;
     }
 
+    /* Container */
     .container {
       width: 100%;
       max-width: 1160px;
@@ -114,7 +111,7 @@
     section {
       padding: 5.5rem 0;
       position: relative;
-      z-index: 2;
+      z-index: 10;
     }
 
     @media (max-width: 768px) {
@@ -123,13 +120,13 @@
 
     .section-header {
       text-align: center;
-      margin-bottom: 3.75rem;
+      margin-bottom: 3.5rem;
     }
 
     .section-subtitle {
       font-family: 'Great Vibes', cursive;
       font-size: 2.35rem;
-      color: var(--temple-saffron);
+      color: var(--terracotta);
       display: block;
       margin-bottom: 0.35rem;
       line-height: 1.2;
@@ -147,8 +144,8 @@
     }
 
     @media (max-width: 768px) {
-      .section-subtitle { font-size: 1.95rem; }
-      .section-title { font-size: 1.75rem; }
+      .section-subtitle { font-size: 1.9rem; }
+      .section-title { font-size: 1.7rem; }
     }
 
     .temple-divider {
@@ -158,7 +155,7 @@
       gap: 16px;
       margin: 0.75rem auto 0;
       width: 100%;
-      max-width: 320px;
+      max-width: 300px;
     }
 
     .temple-divider::before,
@@ -166,49 +163,82 @@
       content: "";
       height: 1.5px;
       flex: 1;
-      background: linear-gradient(90deg, transparent, var(--brass-gold), transparent);
+      background: linear-gradient(90deg, transparent, var(--antique-gold), transparent);
     }
 
     .temple-divider-icon {
-      width: 26px;
-      height: 26px;
-      fill: var(--temple-saffron);
+      width: 24px;
+      height: 24px;
+      fill: var(--terracotta);
     }
 
     /* ==========================================================================
-       TRADITIONAL MARIGOLD & MANGO LEAF TORAN (ENTRANCE GARLAND)
+       HERO: REAL SCROLL-DRIVEN PARALLAX TEMPLE ZOOM & NAME PERSPECTIVE
        ========================================================================== */
-    .marigold-toran-bar {
+    .hero-scroll-track {
+      position: relative;
+      height: 230vh; /* Scroll track for cinematic push-in */
+      background-color: #f7ebe1;
+    }
+
+    @media (max-width: 768px) {
+      .hero-scroll-track {
+        height: 210vh; /* Smooth mobile scroll track */
+      }
+    }
+
+    .hero-sticky-stage {
+      position: sticky;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      height: 100dvh; /* Mobile viewport height fix */
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      perspective: 1000px;
+      background: radial-gradient(circle at 50% 30%, #fdf5eb 0%, #f5e4d3 60%, #eed5bd 100%);
+    }
+
+    /* Foreground Top Marigold Toran Garland */
+    .hero-toran-garland {
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
-      height: 52px;
+      width: 100%;
+      max-height: 130px;
+      object-fit: fill;
       pointer-events: none;
-      z-index: 35;
-      background-repeat: repeat-x;
-      background-size: 84px 52px;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 84 52'%3E%3Cpath d='M0,0 Q42,34 84,0' fill='none' stroke='%23386622' stroke-width='2.5'/%3E%3Cpath d='M20,12 Q42,42 64,12' fill='none' stroke='%23487c2b' stroke-width='2'/%3E%3Ccircle cx='42' cy='24' r='11' fill='%23f99f1b'/%3E%3Ccircle cx='42' cy='24' r='7.5' fill='%23ea580c'/%3E%3Ccircle cx='42' cy='24' r='3.5' fill='%23fde047'/%3E%3Ccircle cx='10' cy='6' r='6.5' fill='%23f97316'/%3E%3Ccircle cx='74' cy='6' r='6.5' fill='%23f97316'/%3E%3Cpath d='M37,28 L42,49 L47,28 Z' fill='%231f4e13'/%3E%3C/svg%3E");
+      z-index: 20;
+      filter: drop-shadow(0 6px 12px rgba(0,0,0,0.18));
     }
 
-    /* ==========================================================================
-       SWAYING BRASS TEMPLE BELLS (PHYSICAL BELL AUDIO)
-       ========================================================================== */
-    .temple-bell-dock {
-      position: fixed;
+    @media (max-width: 768px) {
+      .hero-toran-garland {
+        max-height: 80px;
+      }
+    }
+
+    /* Hanging Brass Temple Bells (Left & Right) */
+    .hero-hanging-bell {
+      position: absolute;
       top: 0;
-      z-index: 40;
+      z-index: 22;
       cursor: pointer;
       display: flex;
       flex-direction: column;
       align-items: center;
       transform-origin: top center;
-      animation: bellSwing 4.2s ease-in-out infinite;
+      animation: bellSwing 4s ease-in-out infinite;
       transition: transform 0.25s ease;
     }
 
-    .bell-left { left: 1.5rem; animation-delay: 0.1s; }
-    .bell-right { right: 1.5rem; animation-delay: 1.3s; }
+    .bell-left { left: 2rem; animation-delay: 0.1s; }
+    .bell-right { right: 2rem; animation-delay: 1.2s; }
 
     @media (max-width: 768px) {
       .bell-left { left: 0.75rem; }
@@ -220,35 +250,23 @@
       50% { transform: rotate(3.5deg); }
     }
 
-    .bell-chain {
-      width: 3.5px;
-      height: 90px;
-      background: repeating-linear-gradient(180deg, #8a6414, #8a6414 4px, #ffd86b 5px, #8a6414 9px);
-      box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    .bell-image-asset {
+      width: 64px;
+      height: auto;
+      filter: drop-shadow(0 8px 16px rgba(0,0,0,0.3));
     }
 
     @media (max-width: 768px) {
-      .bell-chain { height: 60px; }
+      .bell-image-asset { width: 44px; }
     }
 
-    .bell-svg {
-      width: 48px;
-      height: 56px;
-      filter: drop-shadow(0 6px 12px rgba(0,0,0,0.35));
-      transition: transform 0.2s ease;
-    }
-
-    .temple-bell-dock:active .bell-svg {
-      transform: scale(1.15) rotate(8deg);
-    }
-
-    .bell-tag {
+    .bell-tap-cue {
       position: absolute;
-      bottom: -18px;
-      font-size: 0.62rem;
-      background: rgba(82, 19, 27, 0.9);
+      bottom: -22px;
+      font-size: 0.65rem;
+      background: rgba(74, 24, 14, 0.9);
       color: #fff;
-      padding: 2px 7px;
+      padding: 2px 8px;
       border-radius: 4px;
       white-space: nowrap;
       opacity: 0;
@@ -256,392 +274,208 @@
       transition: opacity 0.3s;
     }
 
-    .temple-bell-dock:hover .bell-tag { opacity: 1; }
+    .hero-hanging-bell:hover .bell-tap-cue { opacity: 1; }
 
-    /* ==========================================================================
-       FLOATING AUDIO & PETALS CONTROLS
-       ========================================================================== */
-    .floating-tools {
+    /* COUPLE NAMES (TOP HERO): "Arpit" weds "Mrudula" */
+    .hero-names-container {
+      position: relative;
+      z-index: 15;
+      text-align: center;
+      margin-top: calc(env(safe-area-inset-top, 0px) + 3.8rem);
+      padding: 0 1rem;
+      transform-origin: center top;
+      will-change: transform, opacity;
+      transition: transform 0.1s linear, opacity 0.1s linear;
+    }
+
+    @media (max-width: 768px) {
+      .hero-names-container {
+        margin-top: calc(env(safe-area-inset-top, 0px) + 2.75rem);
+      }
+    }
+
+    .auspicious-shloka-pill {
+      font-family: 'Rozha One', Georgia, serif;
+      font-size: 1.05rem;
+      color: var(--terracotta);
+      letter-spacing: 2px;
+      margin-bottom: 0.25rem;
+      display: inline-block;
+    }
+
+    @media (max-width: 768px) {
+      .auspicious-shloka-pill { font-size: 0.92rem; }
+    }
+
+    .hero-name-primary {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(2.6rem, 7vw, 5.2rem);
+      font-weight: 700;
+      color: var(--royal-maroon);
+      line-height: 1;
+      letter-spacing: 1px;
+      text-shadow: 0 2px 10px rgba(255, 255, 255, 0.8);
+      margin: 0;
+      text-transform: none;
+    }
+
+    .hero-weds-script {
+      font-family: 'Great Vibes', cursive;
+      font-size: clamp(1.8rem, 4.5vw, 3.4rem);
+      color: var(--terracotta);
+      display: block;
+      margin: -0.3rem 0;
+      line-height: 1.1;
+    }
+
+    .hero-date-caption {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(0.72rem, 2vw, 0.85rem);
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-top: 0.4rem;
+    }
+
+    /* THE REAL PHOTOREALISTIC RAM MANDIR TEMPLE & COUPLE ARTWORK */
+    .hero-temple-visual-wrapper {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 75vh;
+      height: 75dvh;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      z-index: 10;
+      will-change: transform;
+      transform-origin: center bottom;
+    }
+
+    @media (max-width: 768px) {
+      .hero-temple-visual-wrapper {
+        height: 68vh;
+        height: 68dvh;
+      }
+    }
+
+    .ram-mandir-real-image {
+      width: 100%;
+      height: 100%;
+      max-width: 1500px;
+      object-fit: cover;
+      object-position: center bottom;
+      transform-origin: center bottom;
+      will-change: transform;
+      filter: drop-shadow(0 -10px 30px rgba(74, 24, 14, 0.15));
+    }
+
+    /* Bottom Gradient Fade on Temple Base */
+    .hero-bottom-blend {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 15%;
+      background: linear-gradient(180deg, transparent 0%, var(--bg-cream) 100%);
+      z-index: 12;
+      pointer-events: none;
+    }
+
+    /* Scroll Cue */
+    .hero-scroll-cue {
+      position: absolute;
+      bottom: 1.25rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 25;
+      text-align: center;
+      color: var(--royal-maroon);
+      font-size: 0.75rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 600;
+      pointer-events: none;
+      animation: bounceCue 2s infinite ease-in-out;
+      background: rgba(255, 255, 255, 0.85);
+      padding: 0.35rem 1rem;
+      border-radius: 9999px;
+      border: 1px solid rgba(197, 155, 39, 0.4);
+      backdrop-filter: blur(6px);
+    }
+
+    @keyframes bounceCue {
+      0%, 100% { transform: translate(-50%, 0); }
+      50% { transform: translate(-50%, -6px); }
+    }
+
+    /* Floating Music & Petals Controls */
+    .floating-tools-dock {
       position: fixed;
       top: 1rem;
-      right: 5rem;
+      right: 5.5rem;
       z-index: 100;
       display: flex;
       gap: 0.65rem;
     }
 
     @media (max-width: 768px) {
-      .floating-tools { top: 0.75rem; right: 4.2rem; }
+      .floating-tools-dock { top: 0.75rem; right: 4.2rem; }
     }
 
-    .tool-btn {
+    .tool-icon-btn {
       width: 42px;
       height: 42px;
       border-radius: 50%;
-      background: rgba(255, 255, 255, 0.92);
+      background: rgba(255, 255, 255, 0.94);
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
-      border: 1.5px solid var(--brass-gold);
+      border: 1.5px solid var(--antique-gold);
       color: var(--royal-maroon);
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      box-shadow: var(--shadow-subtle);
-      transition: var(--transition-smooth);
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
     }
 
-    .tool-btn:hover {
+    .tool-icon-btn:hover {
       transform: scale(1.08);
       background: var(--royal-maroon);
       color: #fff;
     }
 
-    .tool-btn.playing {
+    .tool-icon-btn.playing {
       animation: musicPulse 2s infinite ease-in-out;
       background: var(--royal-maroon);
-      color: var(--brass-gold-light);
+      color: var(--gold-light);
     }
 
     @keyframes musicPulse {
-      0%, 100% { box-shadow: 0 0 0 0 rgba(226, 125, 44, 0.7); }
-      50% { box-shadow: 0 0 0 10px rgba(226, 125, 44, 0); }
+      0%, 100% { box-shadow: 0 0 0 0 rgba(195, 111, 50, 0.7); }
+      50% { box-shadow: 0 0 0 10px rgba(195, 111, 50, 0); }
     }
 
-    .tool-btn svg {
+    .tool-icon-btn svg {
       width: 20px;
       height: 20px;
       fill: currentColor;
     }
 
     /* ==========================================================================
-       HERO: AYODHYA RAM MANDIR TEMPLE COURTYARD WITH PARALLAX & COUPLE
-       ========================================================================== */
-    .hero-mandir-section {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      background: radial-gradient(circle at 50% 15%, #922b3a 0%, #561621 55%, #2c090e 100%);
-      color: #fff;
-      padding: 5.5rem 1.5rem 6.5rem;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero-arch-frame {
-      position: absolute;
-      top: 1.25rem;
-      left: 1.25rem;
-      right: 1.25rem;
-      bottom: 1.25rem;
-      border: 1.5px solid rgba(212, 175, 55, 0.45);
-      border-radius: var(--radius-lg);
-      pointer-events: none;
-      z-index: 1;
-    }
-
-    .hero-arch-frame::after {
-      content: "";
-      position: absolute;
-      top: 6px;
-      left: 6px;
-      right: 6px;
-      bottom: 6px;
-      border: 1px dashed rgba(212, 175, 55, 0.35);
-      border-radius: calc(var(--radius-lg) - 4px);
-    }
-
-    .hero-content {
-      position: relative;
-      z-index: 5;
-      max-width: 920px;
-      width: 100%;
-      animation: fadeIn 1.2s ease-out;
-    }
-
-    .auspicious-ribbon {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      background: rgba(255, 255, 255, 0.12);
-      border: 1px solid rgba(212, 175, 55, 0.5);
-      padding: 0.45rem 1.6rem;
-      border-radius: 9999px;
-      margin-bottom: 1.5rem;
-      color: var(--brass-gold-light);
-      font-size: 1.1rem;
-      letter-spacing: 2px;
-      backdrop-filter: blur(8px);
-      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-    }
-
-    /* THE GRAND RAM MANDIR 3D ARCHITECTURAL SVG CANVAS */
-    .mandir-canvas-container {
-      position: relative;
-      width: 320px;
-      height: 250px;
-      margin: 0.5rem auto 1.5rem;
-    }
-
-    @media (max-width: 768px) {
-      .mandir-canvas-container {
-        width: 260px;
-        height: 210px;
-      }
-    }
-
-    .mandir-svg {
-      width: 100%;
-      height: 100%;
-      filter: drop-shadow(0 12px 30px rgba(0,0,0,0.55));
-    }
-
-    .saffron-dhwaja {
-      transform-origin: 160px 18px;
-      animation: flagWaving 2.2s ease-in-out infinite alternate;
-    }
-
-    @keyframes flagWaving {
-      0% { transform: skewY(0deg) scaleX(1); }
-      100% { transform: skewY(12deg) scaleX(0.9); }
-    }
-
-    .sanctum-divine-aura {
-      animation: sanctumPulse 2.8s ease-in-out infinite alternate;
-    }
-
-    @keyframes sanctumPulse {
-      0% { opacity: 0.6; r: 18px; }
-      100% { opacity: 1; r: 28px; }
-    }
-
-    .couple-in-courtyard {
-      animation: coupleFloat 3.5s ease-in-out infinite alternate;
-    }
-
-    @keyframes coupleFloat {
-      0% { transform: translateY(0); }
-      100% { transform: translateY(-3px); }
-    }
-
-    .invitation-pretext {
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-style: italic;
-      font-size: 1.45rem;
-      color: #faead8;
-      margin-bottom: 0.4rem;
-    }
-
-    .couple-names {
-      font-family: 'Cinzel Decorative', serif;
-      font-size: 3.75rem;
-      line-height: 1.15;
-      font-weight: 700;
-      margin: 0.35rem 0 1rem;
-      background: var(--gold-text);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
-    }
-
-    @media (max-width: 768px) {
-      .couple-names { font-size: 2.55rem; }
-      .invitation-pretext { font-size: 1.25rem; }
-    }
-
-    .wedding-hashtag-badge {
-      display: inline-block;
-      font-size: 0.85rem;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: var(--brass-gold-light);
-      background: rgba(255, 255, 255, 0.08);
-      padding: 0.4rem 1.5rem;
-      border-radius: 9999px;
-      border: 1px solid rgba(212, 175, 55, 0.45);
-      margin-bottom: 1.75rem;
-    }
-
-    /* FLICKERING DIYAS ROW */
-    .diyas-courtyard-row {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 2.75rem;
-      margin-bottom: 2.25rem;
-    }
-
-    .diya-block {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .diya-flame-real {
-      width: 14px;
-      height: 22px;
-      background: radial-gradient(circle at 50% 80%, #ffffff 0%, #fef08a 35%, #ea580c 80%, transparent 100%);
-      border-radius: 50% 50% 35% 35% / 60% 60% 40% 40%;
-      filter: drop-shadow(0 0 9px #f97316);
-      animation: flameWaver 1.8s infinite alternate ease-in-out;
-      transform-origin: center bottom;
-    }
-
-    @keyframes flameWaver {
-      0% { transform: scale(1) rotate(-3deg); opacity: 0.9; }
-      50% { transform: scale(1.15) rotate(3deg); opacity: 1; }
-      100% { transform: scale(0.95) rotate(-1deg); opacity: 0.85; }
-    }
-
-    .diya-brass-pot {
-      width: 44px;
-      height: 18px;
-      background: linear-gradient(180deg, #d4af37, #8a650c);
-      border-radius: 0 0 40px 40px;
-      border-top: 2px solid #ffe885;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    }
-
-    .wedding-date-hero {
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: 1.8rem;
-      color: #fff;
-      letter-spacing: 2px;
-      font-weight: 600;
-    }
-
-    .wedding-location-hero {
-      font-size: 0.95rem;
-      color: #eddcd9;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      margin-bottom: 2.25rem;
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 9px;
-      padding: 0.9rem 2rem;
-      font-size: 0.88rem;
-      font-weight: 600;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      text-decoration: none;
-      border-radius: 9999px;
-      transition: var(--transition-smooth);
-      cursor: pointer;
-      border: none;
-    }
-
-    .btn-gold {
-      background: var(--gold-gradient);
-      color: var(--royal-maroon);
-      box-shadow: 0 4px 18px rgba(212, 175, 55, 0.45);
-    }
-
-    .btn-gold:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 28px rgba(212, 175, 55, 0.65);
-    }
-
-    .btn-outline-gold {
-      background: transparent;
-      color: var(--brass-gold-light);
-      border: 1.5px solid var(--brass-gold);
-    }
-
-    .btn-outline-gold:hover {
-      background: rgba(212, 175, 55, 0.2);
-      color: #fff;
-      transform: translateY(-3px);
-    }
-
-    .btn svg {
-      width: 18px;
-      height: 18px;
-      fill: currentColor;
-    }
-
-    /* Live Countdown */
-    .countdown-wrapper {
-      margin-top: 3.5rem;
-      background: rgba(255, 255, 255, 0.09);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border: 1.5px solid rgba(212, 175, 55, 0.4);
-      border-radius: var(--radius-lg);
-      padding: 1.85rem 1rem;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
-    }
-
-    .countdown-heading {
-      font-family: 'Great Vibes', cursive;
-      font-size: 2.1rem;
-      color: var(--brass-gold-light);
-      margin-bottom: 1.25rem;
-    }
-
-    .countdown-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 0.75rem;
-      max-width: 560px;
-      margin: 0 auto;
-    }
-
-    .countdown-unit {
-      background: rgba(18, 4, 7, 0.6);
-      border: 1px solid rgba(212, 175, 55, 0.3);
-      border-radius: var(--radius-md);
-      padding: 0.95rem 0.5rem;
-      text-align: center;
-    }
-
-    .countdown-value {
-      font-family: 'Cinzel Decorative', serif;
-      font-size: 2.2rem;
-      font-weight: 700;
-      color: var(--brass-gold-light);
-      display: block;
-      line-height: 1.1;
-    }
-
-    .countdown-label {
-      font-size: 0.72rem;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      color: #dfcac7;
-      margin-top: 0.35rem;
-      display: block;
-    }
-
-    @media (max-width: 600px) {
-      .countdown-value { font-size: 1.6rem; }
-      .countdown-label { font-size: 0.65rem; }
-      .countdown-grid { gap: 0.45rem; }
-    }
-
-    /* ==========================================================================
-       SECTION 1: GANESH VANDANA & SACRED INVOCATION
+       SECTION 1: GANESH VANDANA & INVOCATION
        ========================================================================== */
     .temple-vandana-card {
       background: #ffffff;
-      border: 2px solid rgba(212, 175, 55, 0.4);
+      border: 2px solid rgba(197, 155, 39, 0.4);
       border-radius: var(--radius-jharokha);
       padding: 4.5rem 2.5rem 3.5rem;
-      box-shadow: var(--shadow-elevated);
+      box-shadow: var(--shadow-md);
       text-align: center;
       position: relative;
       background-image: radial-gradient(circle at 50% 25%, #ffffff 50%, #fcf7f2 100%);
@@ -657,8 +491,8 @@
       width: 84px;
       height: 84px;
       margin: 0 auto 1.5rem;
-      fill: var(--temple-saffron);
-      filter: drop-shadow(0 4px 14px rgba(200, 90, 23, 0.3));
+      fill: var(--terracotta);
+      filter: drop-shadow(0 4px 14px rgba(179, 84, 34, 0.3));
     }
 
     .shloka-sanskrit {
@@ -671,7 +505,7 @@
     }
 
     @media (max-width: 768px) {
-      .shloka-sanskrit { font-size: 1.2rem; line-height: 1.8; }
+      .shloka-sanskrit { font-size: 1.18rem; line-height: 1.8; }
     }
 
     .shloka-meaning {
@@ -698,6 +532,60 @@
       margin-top: 0.35rem;
     }
 
+    /* Live Countdown */
+    .countdown-box {
+      margin-top: 2.75rem;
+      background: var(--bg-sandstone);
+      border: 1.5px solid rgba(197, 155, 39, 0.4);
+      border-radius: var(--radius-md);
+      padding: 1.75rem 1rem;
+    }
+
+    .countdown-title {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2rem;
+      color: var(--terracotta);
+      margin-bottom: 1rem;
+    }
+
+    .countdown-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.75rem;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    .countdown-unit {
+      background: #ffffff;
+      border: 1px solid rgba(197, 155, 39, 0.35);
+      border-radius: var(--radius-sm);
+      padding: 0.85rem 0.5rem;
+    }
+
+    .countdown-val {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--royal-maroon);
+      display: block;
+      line-height: 1.1;
+    }
+
+    .countdown-lbl {
+      font-size: 0.7rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-top: 0.3rem;
+      display: block;
+    }
+
+    @media (max-width: 600px) {
+      .countdown-val { font-size: 1.5rem; }
+      .countdown-lbl { font-size: 0.65rem; }
+    }
+
     /* ==========================================================================
        SECTION 2: SAPTAPADI & SACRED MANDAPAM RITUALS
        ========================================================================== */
@@ -710,36 +598,36 @@
 
     .vow-card {
       background: #ffffff;
-      border: 1.5px solid rgba(212, 175, 55, 0.3);
+      border: 1.5px solid rgba(197, 155, 39, 0.3);
       border-radius: var(--radius-md);
       padding: 1.75rem;
-      box-shadow: var(--shadow-subtle);
-      transition: var(--transition-smooth);
+      box-shadow: var(--shadow-sm);
+      transition: all 0.35s ease;
       position: relative;
     }
 
     .vow-card:hover {
       transform: translateY(-5px);
-      box-shadow: var(--shadow-elevated);
-      border-color: var(--temple-saffron);
+      box-shadow: var(--shadow-md);
+      border-color: var(--terracotta);
     }
 
-    .vow-number {
+    .vow-step-num {
       font-family: 'Cinzel Decorative', serif;
-      font-size: 1.1rem;
-      color: var(--temple-saffron);
+      font-size: 1.05rem;
+      color: var(--terracotta);
       font-weight: 700;
       margin-bottom: 0.35rem;
     }
 
-    .vow-title {
+    .vow-step-title {
       font-size: 1.15rem;
       color: var(--royal-maroon);
       font-weight: 700;
       margin-bottom: 0.4rem;
     }
 
-    .vow-desc {
+    .vow-step-desc {
       font-size: 0.88rem;
       color: var(--text-muted);
       line-height: 1.5;
@@ -762,9 +650,9 @@
       background: #ffffff;
       border-radius: var(--radius-jharokha);
       overflow: hidden;
-      box-shadow: var(--shadow-subtle);
-      border: 1.5px solid rgba(212, 175, 55, 0.35);
-      transition: var(--transition-smooth);
+      box-shadow: var(--shadow-sm);
+      border: 1.5px solid rgba(197, 155, 39, 0.35);
+      transition: all 0.35s ease;
       display: flex;
       flex-direction: column;
       position: relative;
@@ -772,14 +660,14 @@
 
     .event-card:hover {
       transform: translateY(-8px);
-      box-shadow: var(--shadow-elevated);
-      border-color: var(--temple-saffron);
+      box-shadow: var(--shadow-md);
+      border-color: var(--terracotta);
     }
 
     .event-header {
       padding: 3.5rem 1.75rem 1.25rem;
       background: linear-gradient(180deg, #f7ebe1 0%, #ffffff 100%);
-      border-bottom: 1px dashed rgba(212, 175, 55, 0.35);
+      border-bottom: 1px dashed rgba(197, 155, 39, 0.35);
       text-align: center;
       position: relative;
     }
@@ -793,7 +681,7 @@
       height: 50px;
       border-radius: 50%;
       background: #ffffff;
-      border: 1.5px solid var(--brass-gold);
+      border: 1.5px solid var(--antique-gold);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -803,7 +691,7 @@
     .event-arch-crest svg {
       width: 25px;
       height: 25px;
-      fill: var(--temple-saffron);
+      fill: var(--terracotta);
     }
 
     .event-name {
@@ -817,7 +705,7 @@
     .event-tagline {
       font-family: 'Cormorant Garamond', Georgia, serif;
       font-style: italic;
-      color: var(--temple-saffron);
+      color: var(--terracotta);
       font-size: 1.1rem;
     }
 
@@ -840,7 +728,7 @@
       width: 20px;
       height: 20px;
       min-width: 20px;
-      color: var(--temple-saffron);
+      color: var(--terracotta);
       margin-top: 2px;
     }
 
@@ -867,8 +755,8 @@
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      background: var(--sandstone-light);
-      border: 1px solid rgba(212, 175, 55, 0.35);
+      background: var(--bg-sandstone);
+      border: 1px solid rgba(197, 155, 39, 0.35);
       padding: 0.45rem 0.9rem;
       border-radius: var(--radius-sm);
       font-size: 0.82rem;
@@ -882,7 +770,7 @@
       display: flex;
       gap: 0.75rem;
       background: #faf4ec;
-      border-top: 1px solid rgba(212, 175, 55, 0.2);
+      border-top: 1px solid rgba(197, 155, 39, 0.2);
     }
 
     .event-btn {
@@ -899,7 +787,7 @@
       align-items: center;
       justify-content: center;
       gap: 5px;
-      transition: var(--transition-smooth);
+      transition: all 0.3s ease;
       cursor: pointer;
     }
 
@@ -909,18 +797,18 @@
       border: 1px solid var(--royal-maroon);
     }
 
-    .event-btn-primary:hover { background: var(--crimson-accent); }
+    .event-btn-primary:hover { background: var(--deep-crimson); }
 
     .event-btn-secondary {
       background: #ffffff;
       color: var(--royal-maroon);
-      border: 1px solid rgba(212, 175, 55, 0.45);
+      border: 1px solid rgba(197, 155, 39, 0.45);
     }
 
-    .event-btn-secondary:hover { background: var(--sandstone-light); }
+    .event-btn-secondary:hover { background: var(--bg-sandstone); }
 
     /* ==========================================================================
-       SECTION 4: THINGS TO KNOW (GUEST GUIDE BADGES)
+       SECTION 4: THINGS TO KNOW (GUEST GUIDE)
        ========================================================================== */
     .guest-guide-grid {
       display: grid;
@@ -933,28 +821,28 @@
       border-radius: var(--radius-md);
       padding: 2rem 1.5rem;
       text-align: center;
-      border: 1.5px solid rgba(212, 175, 55, 0.35);
-      box-shadow: var(--shadow-subtle);
-      transition: var(--transition-smooth);
+      border: 1.5px solid rgba(197, 155, 39, 0.35);
+      box-shadow: var(--shadow-sm);
+      transition: all 0.35s ease;
     }
 
     .guide-card:hover {
       transform: translateY(-5px);
-      box-shadow: var(--shadow-elevated);
-      border-color: var(--temple-saffron);
+      box-shadow: var(--shadow-md);
+      border-color: var(--terracotta);
     }
 
     .guide-circle-icon {
       width: 60px;
       height: 60px;
       border-radius: 50%;
-      background: var(--sandstone-light);
-      border: 2px solid var(--brass-gold);
+      background: var(--bg-sandstone);
+      border: 2px solid var(--antique-gold);
       display: flex;
       align-items: center;
       justify-content: center;
       margin: 0 auto 1.25rem;
-      color: var(--temple-saffron);
+      color: var(--terracotta);
     }
 
     .guide-circle-icon svg {
@@ -978,14 +866,14 @@
     }
 
     /* ==========================================================================
-       SECTION 5: VENUE & GOOGLE MAPS DIRECTIONS
+       SECTION 5: VENUE & GOOGLE MAPS
        ========================================================================== */
     .venue-card {
       background: #ffffff;
       border-radius: var(--radius-lg);
-      border: 1.5px solid rgba(212, 175, 55, 0.35);
+      border: 1.5px solid rgba(197, 155, 39, 0.35);
       overflow: hidden;
-      box-shadow: var(--shadow-elevated);
+      box-shadow: var(--shadow-md);
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
@@ -1038,7 +926,7 @@
     .amenity-item svg {
       width: 18px;
       height: 18px;
-      fill: var(--temple-saffron);
+      fill: var(--terracotta);
       min-width: 18px;
     }
 
@@ -1054,99 +942,43 @@
       border: 0;
     }
 
-    /* ==========================================================================
-       SECTION 6: PHOTO GALLERY WITH ARCHED MATTES
-       ========================================================================== */
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .gallery-item {
-      position: relative;
-      border-radius: var(--radius-jharokha);
-      overflow: hidden;
-      aspect-ratio: 4 / 5.2;
-      box-shadow: var(--shadow-subtle);
-      cursor: pointer;
-      border: 2px solid rgba(212, 175, 55, 0.35);
-    }
-
-    .gallery-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.6s ease;
-    }
-
-    .gallery-item:hover img { transform: scale(1.08); }
-
-    .gallery-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, transparent 40%, rgba(82, 19, 27, 0.88) 100%);
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 1.25rem;
-      color: #ffffff;
-    }
-
-    .gallery-overlay span {
-      font-family: 'Great Vibes', cursive;
-      font-size: 1.6rem;
-      color: var(--brass-gold-light);
-    }
-
-    .gallery-overlay p {
-      font-size: 0.82rem;
-      letter-spacing: 1px;
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 0.9rem 2rem;
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 1.5px;
       text-transform: uppercase;
-      opacity: 0.9;
-    }
-
-    /* Lightbox Modal */
-    .modal-lightbox {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(20, 4, 7, 0.95);
-      z-index: 1000;
-      align-items: center;
-      justify-content: center;
-      padding: 1.5rem;
-    }
-
-    .modal-lightbox.active { display: flex; }
-
-    .modal-lightbox img {
-      max-width: 90vw;
-      max-height: 85vh;
-      border-radius: var(--radius-sm);
-      border: 2px solid var(--brass-gold);
-      box-shadow: 0 0 35px rgba(212, 175, 55, 0.5);
-    }
-
-    .modal-close {
-      position: absolute;
-      top: 1.5rem;
-      right: 1.5rem;
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.2);
-      border: 1px solid var(--brass-gold);
-      color: #ffffff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      text-decoration: none;
+      border-radius: 9999px;
+      transition: all 0.3s ease;
       cursor: pointer;
-      font-size: 1.5rem;
+      border: none;
+    }
+
+    .btn-gold {
+      background: var(--gold-gradient);
+      color: var(--royal-maroon);
+      box-shadow: 0 4px 18px rgba(197, 155, 39, 0.45);
+    }
+
+    .btn-gold:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 28px rgba(197, 155, 39, 0.65);
+    }
+
+    .btn svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
     }
 
     /* ==========================================================================
-       SECTION 7: RSVP (ONE-CLICK WHATSAPP INTEGRATION)
+       SECTION 6: RSVP (ONE-CLICK WHATSAPP INTEGRATION)
        ========================================================================== */
     .rsvp-container {
       max-width: 720px;
@@ -1154,8 +986,8 @@
       background: #ffffff;
       border-radius: var(--radius-lg);
       padding: 3.5rem 2.5rem;
-      box-shadow: var(--shadow-elevated);
-      border: 1.5px solid rgba(212, 175, 55, 0.4);
+      box-shadow: var(--shadow-md);
+      border: 1.5px solid rgba(197, 155, 39, 0.4);
     }
 
     @media (max-width: 768px) {
@@ -1183,13 +1015,13 @@
       border-radius: var(--radius-sm);
       background: #fdfaf7;
       color: var(--text-dark);
-      transition: var(--transition-smooth);
+      transition: all 0.3s ease;
     }
 
     .form-control:focus {
       outline: none;
-      border-color: var(--temple-saffron);
-      box-shadow: 0 0 0 3px rgba(200, 90, 23, 0.2);
+      border-color: var(--terracotta);
+      box-shadow: 0 0 0 3px rgba(179, 84, 34, 0.2);
       background: #ffffff;
     }
 
@@ -1214,13 +1046,13 @@
       border-radius: var(--radius-sm);
       cursor: pointer;
       font-size: 0.88rem;
-      transition: var(--transition-smooth);
+      transition: all 0.3s ease;
     }
 
-    .checkbox-pill:hover { border-color: var(--temple-saffron); }
+    .checkbox-pill:hover { border-color: var(--terracotta); }
 
     .checkbox-pill input[type="checkbox"] {
-      accent-color: var(--temple-saffron);
+      accent-color: var(--terracotta);
       width: 18px;
       height: 18px;
     }
@@ -1241,7 +1073,7 @@
     }
 
     .radio-label input[type="radio"] {
-      accent-color: var(--temple-saffron);
+      accent-color: var(--terracotta);
       width: 18px;
       height: 18px;
     }
@@ -1271,7 +1103,7 @@
       display: none;
       padding: 1.25rem;
       background: #fef3c7;
-      border: 1.5px solid var(--temple-saffron);
+      border: 1.5px solid var(--terracotta);
       border-radius: var(--radius-md);
       color: var(--royal-maroon);
       margin-top: 1.5rem;
@@ -1280,7 +1112,7 @@
     }
 
     /* ==========================================================================
-       SECTION 8: GUESTBOOK & BLESSINGS BOARD
+       SECTION 7: GUESTBOOK & BLESSINGS
        ========================================================================== */
     .wishes-wrapper {
       max-width: 820px;
@@ -1289,10 +1121,10 @@
 
     .wish-input-card {
       background: #ffffff;
-      border: 1.5px solid rgba(212, 175, 55, 0.35);
+      border: 1.5px solid rgba(197, 155, 39, 0.35);
       border-radius: var(--radius-md);
       padding: 2.25rem;
-      box-shadow: var(--shadow-subtle);
+      box-shadow: var(--shadow-sm);
       margin-bottom: 2.5rem;
     }
 
@@ -1307,10 +1139,10 @@
 
     .wish-card {
       background: #ffffff;
-      border-left: 4px solid var(--temple-saffron);
+      border-left: 4px solid var(--terracotta);
       border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
       padding: 1.25rem 1.5rem;
-      box-shadow: var(--shadow-subtle);
+      box-shadow: var(--shadow-sm);
       animation: fadeIn 0.4s ease;
     }
 
@@ -1339,20 +1171,20 @@
     }
 
     .share-invite-box {
-      background: linear-gradient(135deg, #781c28, #460f16);
+      background: linear-gradient(135deg, #681d18, #4a180e);
       color: #ffffff;
       border-radius: var(--radius-lg);
       padding: 3rem 2rem;
       text-align: center;
-      border: 1.5px solid rgba(212, 175, 55, 0.45);
+      border: 1.5px solid rgba(197, 155, 39, 0.45);
       margin-top: 4rem;
-      box-shadow: var(--shadow-elevated);
+      box-shadow: var(--shadow-md);
     }
 
     .share-invite-box h3 {
       font-size: 1.85rem;
       margin-bottom: 0.75rem;
-      color: var(--brass-gold-light);
+      color: var(--gold-light);
     }
 
     .share-invite-box p {
@@ -1369,13 +1201,13 @@
       text-align: center;
       padding: 4rem 1.5rem 6.5rem;
       position: relative;
-      border-top: 1.5px solid rgba(212, 175, 55, 0.3);
+      border-top: 1.5px solid rgba(197, 155, 39, 0.3);
     }
 
     .footer-monogram {
       font-family: 'Cinzel Decorative', serif;
       font-size: 2.2rem;
-      color: var(--brass-gold);
+      color: var(--antique-gold);
       margin-bottom: 0.75rem;
       display: block;
     }
@@ -1387,7 +1219,7 @@
       margin-bottom: 0.5rem;
     }
 
-    /* Mobile Quick Dock */
+    /* Mobile Bottom Dock Navigation */
     .mobile-bottom-dock {
       display: none;
       position: fixed;
@@ -1397,7 +1229,7 @@
       background: rgba(255, 255, 255, 0.96);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
-      border-top: 1.5px solid rgba(212, 175, 55, 0.4);
+      border-top: 1.5px solid rgba(197, 155, 39, 0.4);
       padding: 0.5rem 0.75rem calc(env(safe-area-inset-bottom, 0px) + 0.5rem);
       z-index: 99;
       justify-content: space-around;
@@ -1420,7 +1252,7 @@
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 0.5px;
-      transition: var(--transition-smooth);
+      transition: all 0.3s ease;
     }
 
     .dock-item svg {
@@ -1430,18 +1262,18 @@
     }
 
     .dock-item:hover, .dock-item:focus, .dock-item.active {
-      color: var(--temple-saffron);
+      color: var(--terracotta);
     }
 
     .dock-item.rsvp-highlight {
       background: var(--royal-maroon);
-      color: var(--brass-gold-light);
+      color: var(--gold-light);
       padding: 0.4rem 0.9rem;
       border-radius: 9999px;
-      border: 1px solid var(--brass-gold);
+      border: 1px solid var(--antique-gold);
     }
 
-    .dock-item.rsvp-highlight svg { fill: var(--brass-gold-light); }
+    .dock-item.rsvp-highlight svg { fill: var(--gold-light); }
 
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(15px); }
@@ -1451,206 +1283,69 @@
 </head>
 <body>
 
-  <!-- Traditional Marigold & Mango Leaf Entrance Toran -->
-  <div class="marigold-toran-bar"></div>
-
   <!-- Fullscreen Animated Petals & Temple Sparkles Canvas -->
   <canvas id="ambient-canvas"></canvas>
 
-  <!-- Interactive Brass Temple Bells (Tap to Ring!) -->
-  <div class="temple-bell-dock bell-left" onclick="ringTempleBell()" title="Click to ring the sacred temple bell!">
-    <div class="bell-chain"></div>
-    <svg class="bell-svg" viewBox="0 0 100 120">
-      <path d="M50,15 C42,15 35,25 35,45 C35,65 20,80 15,95 L85,95 C80,80 65,65 65,45 C65,25 58,15 50,15 Z" fill="url(#bellGrad)" stroke="#8f6b15" stroke-width="2"/>
-      <ellipse cx="50" cy="95" rx="35" ry="10" fill="#a17a1c"/>
-      <circle cx="50" cy="104" r="8" fill="#5c4208"/>
-      <circle cx="50" cy="10" r="7" fill="none" stroke="#d4af37" stroke-width="4"/>
-      <defs>
-        <linearGradient id="bellGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stop-color="#9a7217"/>
-          <stop offset="35%" stop-color="#fef08a"/>
-          <stop offset="65%" stop-color="#d4af37"/>
-          <stop offset="100%" stop-color="#73500a"/>
-        </linearGradient>
-      </defs>
-    </svg>
-    <span class="bell-tag">Tap to Ring 🔔</span>
-  </div>
-
-  <div class="temple-bell-dock bell-right" onclick="ringTempleBell()" title="Click to ring the sacred temple bell!">
-    <div class="bell-chain"></div>
-    <svg class="bell-svg" viewBox="0 0 100 120">
-      <path d="M50,15 C42,15 35,25 35,45 C35,65 20,80 15,95 L85,95 C80,80 65,65 65,45 C65,25 58,15 50,15 Z" fill="url(#bellGrad)" stroke="#8f6b15" stroke-width="2"/>
-      <ellipse cx="50" cy="95" rx="35" ry="10" fill="#a17a1c"/>
-      <circle cx="50" cy="104" r="8" fill="#5c4208"/>
-      <circle cx="50" cy="10" r="7" fill="none" stroke="#d4af37" stroke-width="4"/>
-    </svg>
-    <span class="bell-tag">Tap to Ring 🔔</span>
-  </div>
-
   <!-- Floating Audio & Petals Controls -->
-  <div class="floating-tools">
-    <button class="tool-btn" id="musicToggleBtn" title="Play / Pause Wedding Shehnai & Harp" aria-label="Toggle Wedding Music">
+  <div class="floating-tools-dock">
+    <button class="tool-icon-btn" id="musicToggleBtn" title="Play / Pause Wedding Shehnai & Harp" aria-label="Toggle Wedding Music">
       <svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
     </button>
-    <button class="tool-btn" id="petalsToggleBtn" title="Toggle Floating Petals" aria-label="Toggle Petals">
+    <button class="tool-icon-btn" id="petalsToggleBtn" title="Toggle Floating Petals" aria-label="Toggle Petals">
       <svg viewBox="0 0 24 24"><path d="M12 2L9.19 8.63L2 12l7.19 3.37L12 22l2.81-6.63L22 12l-7.19-3.37L12 2z"/></svg>
     </button>
   </div>
 
   <!-- ==========================================================================
-       HERO: AYODHYA RAM MANDIR TEMPLE COURTYARD WITH PARALLAX & COUPLE
+       HERO: REAL SCROLL-DRIVEN PARALLAX TEMPLE ZOOM & NAME PERSPECTIVE
        ========================================================================== -->
-  <header class="hero-mandir-section" id="hero">
-    <div class="hero-arch-frame"></div>
+  <div class="hero-scroll-track" id="heroTrack">
+    <div class="hero-sticky-stage">
+      <!-- Foreground Marigold Toran Garland Framing the Viewport -->
+      <img src="https://framerusercontent.com/images/XEME29GdiyV3RDHfslzLVTpFP1g.webp" 
+           alt="Marigold Toran Garland" 
+           class="hero-toran-garland" />
 
-    <div class="hero-content">
-      <div class="auspicious-ribbon">
-        <span>॥ ॐ श्री गणेशाय नमः ॥</span>
+      <!-- Hanging Brass Temple Bells (Left & Right) -->
+      <div class="hero-hanging-bell bell-left" onclick="ringTempleBell()" title="Click to ring the sacred temple bell!">
+        <img src="https://framerusercontent.com/images/TUKrvFIUdWb1bb4eewkB1JzZwJw.png" 
+             alt="Hanging Brass Temple Bell" class="bell-image-asset" />
+        <span class="bell-tap-cue">Tap to Ring 🔔</span>
       </div>
 
-      <!-- AYODHYA RAM MANDIR ARCHITECTURE & WALKING COUPLE -->
-      <div class="mandir-canvas-container">
-        <svg class="mandir-svg" viewBox="0 0 320 250" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="shikharGold" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stop-color="#fff099"/>
-              <stop offset="25%" stop-color="#f59e0b"/>
-              <stop offset="65%" stop-color="#d97706"/>
-              <stop offset="100%" stop-color="#854d0e"/>
-            </linearGradient>
-            <radialGradient id="divineAura" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stop-color="#fef08a" stop-opacity="1"/>
-              <stop offset="45%" stop-color="#f59e0b" stop-opacity="0.85"/>
-              <stop offset="100%" stop-color="#b45309" stop-opacity="0"/>
-            </radialGradient>
-            <linearGradient id="carpetGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stop-color="#ffffff"/>
-              <stop offset="100%" stop-color="#fde047"/>
-            </linearGradient>
-          </defs>
-
-          <!-- Golden Spire & Saffron Dhwaja Flag -->
-          <circle cx="160" cy="18" r="5" fill="#fef08a"/>
-          <path d="M156,22 L164,22 L162,18 Z" fill="#ffd54f"/>
-          <path class="saffron-dhwaja" d="M160,18 L194,27 L160,36 Z" fill="#ea580c"/>
-          <line x1="160" y1="12" x2="160" y2="42" stroke="#fef08a" stroke-width="2"/>
-
-          <!-- Tiered Nagara Spire (Towering Ram Mandir Shikhara) -->
-          <polygon points="160,38 138,72 182,72" fill="url(#shikharGold)"/>
-          <polygon points="160,62 126,105 194,105" fill="url(#shikharGold)"/>
-          <polygon points="160,94 110,148 210,148" fill="url(#shikharGold)"/>
-
-          <!-- Side Spire Chhatris -->
-          <polygon points="90,115 68,154 112,154" fill="url(#shikharGold)"/>
-          <polygon points="230,115 208,154 252,154" fill="url(#shikharGold)"/>
-
-          <!-- Carved Sandstone Plinth & Cornice -->
-          <rect x="55" y="148" width="210" height="14" rx="3" fill="#f59e0b" stroke="#92400e" stroke-width="1.5"/>
-          <rect x="42" y="162" width="236" height="9" rx="2" fill="#d97706"/>
-
-          <!-- Intricate Sandstone Pillars (Stambhas) -->
-          <rect x="68" y="171" width="12" height="42" fill="#fef08a" stroke="#ca8a04"/>
-          <rect x="106" y="171" width="12" height="42" fill="#fef08a" stroke="#ca8a04"/>
-          <rect x="202" y="171" width="12" height="42" fill="#fef08a" stroke="#ca8a04"/>
-          <rect x="240" y="171" width="12" height="42" fill="#fef08a" stroke="#ca8a04"/>
-
-          <!-- Glowing Sanctum Doorway (Garbhagriha) -->
-          <path d="M132,213 L132,180 Q160,162 188,180 L188,213 Z" fill="#38060c" stroke="#fde047" stroke-width="2"/>
-          <circle class="sanctum-divine-aura" cx="160" cy="192" r="22" fill="url(#divineAura)"/>
-          
-          <!-- Holy Wedding Fire / Havan Kund Silhouette in Sanctum -->
-          <polygon points="152,211 168,211 165,204 155,204" fill="#ca8a04"/>
-          <path d="M160,195 Q164,202 160,206 Q156,202 160,195 Z" fill="#f97316"/>
-
-          <!-- Grand Carved Temple Staircase -->
-          <rect x="34" y="213" width="252" height="7" fill="#d97706" stroke="#92400e"/>
-          <rect x="24" y="220" width="272" height="8" fill="#b45309"/>
-          <rect x="14" y="228" width="292" height="9" fill="#78350f"/>
-
-          <!-- Courtyard Pathway (White Floral Carpet) -->
-          <polygon points="135,237 185,237 215,250 105,250" fill="url(#carpetGrad)" opacity="0.85"/>
-
-          <!-- THE COUPLE WALKING HAND-IN-HAND TOWARDS THE TEMPLE STEPS -->
-          <g class="couple-in-courtyard" transform="translate(142, 218)">
-            <!-- Groom: Ivory/Gold Sherwani & Turban -->
-            <path d="M7,15 L14,15 L15,29 L6,29 Z" fill="#fef08a" stroke="#a16207" stroke-width="0.7"/>
-            <circle cx="10.5" cy="10" r="3.5" fill="#fbcfe8"/>
-            <path d="M8,8 Q10.5,5 13,8 Q14,9 10.5,10 Z" fill="#ea580c"/> <!-- Saffron Pagdi / Turban -->
-            <rect x="7" y="29" width="3" height="7" fill="#fef08a"/>
-            <rect x="11" y="29" width="3" height="7" fill="#fef08a"/>
-
-            <!-- Bride: Traditional Crimson/Gold Lehenga & Dupatta Veil -->
-            <path d="M21,16 L27,16 L31,31 L17,31 Z" fill="#b91c1c" stroke="#fde047" stroke-width="0.8"/>
-            <circle cx="24" cy="11" r="3.2" fill="#fbcfe8"/>
-            <path d="M21,9 Q24,6 27,9 Q28,14 27,19 L21,19 Z" fill="#dc2626" opacity="0.9"/> <!-- Red Veil -->
-            <circle cx="24" cy="9" r="1.2" fill="#fde047"/> <!-- Maang Tikka -->
-
-            <!-- Clasping Hands in Sacred Union -->
-            <path d="M14,20 Q17.5,23 21,20" stroke="#fbcfe8" stroke-width="1.8" fill="none"/>
-          </g>
-        </svg>
+      <div class="hero-hanging-bell bell-right" onclick="ringTempleBell()" title="Click to ring the sacred temple bell!">
+        <img src="https://framerusercontent.com/images/TUKrvFIUdWb1bb4eewkB1JzZwJw.png" 
+             alt="Hanging Brass Temple Bell" class="bell-image-asset" />
+        <span class="bell-tap-cue">Tap to Ring 🔔</span>
       </div>
 
-      <p class="invitation-pretext">Where love begins, blessings lead the way. We joyfully invite you to the wedding of</p>
-      
-      <h1 class="couple-names">Arpit &amp; Mrudula</h1>
-      
-      <div class="wedding-hashtag-badge">#ArpitWedsMrudula &bull; #ArpitGotMrudulad</div>
-
-      <!-- Auspicious Flickering Diyas Row -->
-      <div class="diyas-courtyard-row">
-        <div class="diya-block">
-          <div class="diya-flame-real"></div>
-          <div class="diya-brass-pot"></div>
-        </div>
-        <div style="font-family:'Cormorant Garamond', Georgia, serif; font-size:1.15rem; color:#fef08a; letter-spacing:3px; text-transform:uppercase;">
-          Under Divine Auspices
-        </div>
-        <div class="diya-block">
-          <div class="diya-flame-real"></div>
-          <div class="diya-brass-pot"></div>
-        </div>
+      <!-- COUPLE NAMES: Tilts backward in 3D perspective and fades as you scroll down -->
+      <div class="hero-names-container" id="heroNames">
+        <span class="auspicious-shloka-pill">॥ श्री गणेशाय नमः ॥</span>
+        <h1 class="hero-name-primary">Arpit</h1>
+        <span class="hero-weds-script">weds</span>
+        <h1 class="hero-name-primary">Mrudula</h1>
+        <div class="hero-date-caption">Saturday, November 28, 2026 &bull; Hyderabad</div>
       </div>
 
-      <p class="wedding-date-hero">Saturday, November 28, 2026</p>
-      <p class="wedding-location-hero">The Royal Palace Resort &bull; Hyderabad, India</p>
-
-      <div class="hero-actions">
-        <a href="#events" class="btn btn-gold">
-          <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg>
-          Ceremony Schedule
-        </a>
-        <a href="#rsvp" class="btn btn-outline-gold">
-          <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-          RSVP via WhatsApp
-        </a>
+      <!-- PHOTOREALISTIC AYODHYA RAM MANDIR TEMPLE & WALKING COUPLE COMPOSITION -->
+      <div class="hero-temple-visual-wrapper" id="templeVisualWrapper">
+        <img src="https://framerusercontent.com/images/lKVzZvE9zjHal1zLmfO4koCjo.webp" 
+             alt="Photorealistic Ayodhya Ram Mandir Temple with Wedding Couple walking hand-in-hand" 
+             class="ram-mandir-real-image" 
+             id="templeRealImg" />
       </div>
 
-      <!-- Live Countdown -->
-      <div class="countdown-wrapper">
-        <div class="countdown-heading">Counting Down to the Sacred Muhurtham</div>
-        <div class="countdown-grid">
-          <div class="countdown-unit">
-            <span class="countdown-value" id="cdDays">00</span>
-            <span class="countdown-label">Days</span>
-          </div>
-          <div class="countdown-unit">
-            <span class="countdown-value" id="cdHours">00</span>
-            <span class="countdown-label">Hours</span>
-          </div>
-          <div class="countdown-unit">
-            <span class="countdown-value" id="cdMins">00</span>
-            <span class="countdown-label">Minutes</span>
-          </div>
-          <div class="countdown-unit">
-            <span class="countdown-value" id="cdSecs">00</span>
-            <span class="countdown-label">Seconds</span>
-          </div>
-        </div>
+      <!-- Gradient Blend to Next Section -->
+      <div class="hero-bottom-blend"></div>
+
+      <!-- Scroll Cue Arrow -->
+      <div class="hero-scroll-cue" id="heroScrollCue">
+        <span>Scroll Down to Enter the Temple</span>
+        <div style="font-size:1.1rem; line-height:1; margin-top:2px;">↓</div>
       </div>
     </div>
-  </header>
+  </div>
 
   <!-- ==========================================================================
        SECTION 1: GANESH VANDANA & SACRED INVOCATION
@@ -1687,6 +1382,29 @@
 
         <div class="letter-hosts">Mr. &amp; Mrs. Sharma and Mr. &amp; Mrs. Rao</div>
         <div class="letter-families">cordially invite you and your family to grace the auspicious wedding ceremony of their beloved children</div>
+
+        <!-- Live Auspicious Countdown -->
+        <div class="countdown-box">
+          <div class="countdown-title">Counting Down to the Sacred Muhurtham</div>
+          <div class="countdown-grid">
+            <div class="countdown-unit">
+              <span class="countdown-val" id="cdDays">00</span>
+              <span class="countdown-lbl">Days</span>
+            </div>
+            <div class="countdown-unit">
+              <span class="countdown-val" id="cdHours">00</span>
+              <span class="countdown-lbl">Hours</span>
+            </div>
+            <div class="countdown-unit">
+              <span class="countdown-val" id="cdMins">00</span>
+              <span class="countdown-lbl">Minutes</span>
+            </div>
+            <div class="countdown-unit">
+              <span class="countdown-val" id="cdSecs">00</span>
+              <span class="countdown-lbl">Seconds</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -1710,39 +1428,39 @@
 
       <div class="saptapadi-grid">
         <div class="vow-card">
-          <div class="vow-number">Step 1 &bull; Pratham Kadam</div>
-          <h3 class="vow-title">Nourishment &amp; Health</h3>
-          <p class="vow-desc">To share the responsibility of providing nourishment and welfare for our home with pure devotion.</p>
+          <div class="vow-step-num">Step 1 &bull; Pratham Kadam</div>
+          <h3 class="vow-step-title">Nourishment &amp; Health</h3>
+          <p class="vow-step-desc">To share the responsibility of providing nourishment and welfare for our home with pure devotion.</p>
         </div>
         <div class="vow-card">
-          <div class="vow-number">Step 2 &bull; Dwitiya Kadam</div>
-          <h3 class="vow-title">Strength &amp; Courage</h3>
-          <p class="vow-desc">To stand by each other through joy and sorrow, giving strength and protecting one another unconditionally.</p>
+          <div class="vow-step-num">Step 2 &bull; Dwitiya Kadam</div>
+          <h3 class="vow-step-title">Strength &amp; Courage</h3>
+          <p class="vow-step-desc">To stand by each other through joy and sorrow, giving strength and protecting one another unconditionally.</p>
         </div>
         <div class="vow-card">
-          <div class="vow-number">Step 3 &bull; Tritiya Kadam</div>
-          <h3 class="vow-title">Prosperity &amp; Wealth</h3>
-          <p class="vow-desc">To work diligently with honesty, growing in spiritual, emotional, and material abundance together.</p>
+          <div class="vow-step-num">Step 3 &bull; Tritiya Kadam</div>
+          <h3 class="vow-step-title">Prosperity &amp; Wealth</h3>
+          <p class="vow-step-desc">To work diligently with honesty, growing in spiritual, emotional, and material abundance together.</p>
         </div>
         <div class="vow-card">
-          <div class="vow-number">Step 4 &bull; Chaturtha Kadam</div>
-          <h3 class="vow-title">Harmony &amp; Respect</h3>
-          <p class="vow-desc">To honor both our families, nurturing wisdom, mutual respect, and peace across generations.</p>
+          <div class="vow-step-num">Step 4 &bull; Chaturtha Kadam</div>
+          <h3 class="vow-step-title">Harmony &amp; Respect</h3>
+          <p class="vow-step-desc">To honor both our families, nurturing wisdom, mutual respect, and peace across generations.</p>
         </div>
         <div class="vow-card">
-          <div class="vow-number">Step 5 &bull; Panchama Kadam</div>
-          <h3 class="vow-title">Progeny &amp; Compassion</h3>
-          <p class="vow-desc">To pray for healthy, virtuous children and guide them with righteousness, truth, and boundless love.</p>
+          <div class="vow-step-num">Step 5 &bull; Panchama Kadam</div>
+          <h3 class="vow-step-title">Compassion &amp; Dharma</h3>
+          <p class="vow-step-desc">To walk the path of righteousness, truth, and mutual care for all living beings.</p>
         </div>
         <div class="vow-card">
-          <div class="vow-number">Step 6 &bull; Shashta Kadam</div>
-          <h3 class="vow-title">Longevity &amp; Togetherness</h3>
-          <p class="vow-desc">To walk together in harmony across all seasons of life, blessed with health, vigor, and peace.</p>
+          <div class="vow-step-num">Step 6 &bull; Shashta Kadam</div>
+          <h3 class="vow-step-title">Longevity &amp; Seasons</h3>
+          <p class="vow-step-desc">To walk together in harmony across all seasons of life, blessed with health, vigor, and peace.</p>
         </div>
-        <div class="vow-card" style="border: 2px solid var(--brass-gold); background: #fffcf7;">
-          <div class="vow-number">Step 7 &bull; Saptama Kadam</div>
-          <h3 class="vow-title">Eternal Companionship</h3>
-          <p class="vow-desc">To become eternal best friends, soulmates united in mind and spirit throughout this lifetime and beyond.</p>
+        <div class="vow-card" style="border: 2px solid var(--antique-gold); background: #fffcf7;">
+          <div class="vow-step-num">Step 7 &bull; Saptama Kadam</div>
+          <h3 class="vow-step-title">Eternal Companionship</h3>
+          <p class="vow-step-desc">To become eternal best friends, soulmates united in mind and spirit throughout this lifetime and beyond.</p>
         </div>
       </div>
     </div>
@@ -1835,9 +1553,9 @@
         </div>
 
         <!-- Event 3: Sacred Muhurtham -->
-        <div class="event-card" style="border: 2px solid var(--brass-gold); box-shadow: var(--shadow-gold);">
+        <div class="event-card" style="border: 2px solid var(--antique-gold);">
           <div class="event-header" style="background: linear-gradient(180deg, #fce7db 0%, #ffffff 100%);">
-            <div class="event-arch-crest" style="background:var(--temple-saffron); border-color:#fff;">
+            <div class="event-arch-crest" style="background:var(--terracotta); border-color:#fff;">
               <svg viewBox="0 0 24 24" style="fill:#fff;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
             </div>
             <h3 class="event-name">Kalyanotsavam (Muhurtham)</h3>
@@ -2016,62 +1734,7 @@
   </section>
 
   <!-- ==========================================================================
-       SECTION 6: PHOTO GALLERY WITH ARCHED JHAROKHAS
-       ========================================================================== -->
-  <section id="gallery" style="background: #faf4ec;">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Moments of Joy</span>
-        <h2 class="section-title">Pre-Wedding Glimpses</h2>
-        <div class="temple-divider">
-          <svg class="temple-divider-icon" viewBox="0 0 24 24"><path d="M12 2L15 8L21 9L17 14L18 20L12 17L6 20L7 14L3 9L9 8L12 2Z"/></svg>
-        </div>
-      </div>
-
-      <div class="gallery-grid">
-        <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=1200&q=80')">
-          <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=600&q=80" alt="Arpit & Mrudula in Ethnic Splendour" loading="lazy" />
-          <div class="gallery-overlay">
-            <span>Golden Hour Glow</span>
-            <p>Traditional Elegance</p>
-          </div>
-        </div>
-
-        <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80')">
-          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=600&q=80" alt="The Proposal" loading="lazy" />
-          <div class="gallery-overlay">
-            <span>The Sacred Vow</span>
-            <p>Under Starry Lights</p>
-          </div>
-        </div>
-
-        <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=80')">
-          <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=600&q=80" alt="Joyful Moments" loading="lazy" />
-          <div class="gallery-overlay">
-            <span>Shared Laughter</span>
-            <p>Our Adventures</p>
-          </div>
-        </div>
-
-        <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=1200&q=80')">
-          <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=600&q=80" alt="Hand in Hand" loading="lazy" />
-          <div class="gallery-overlay">
-            <span>Together Forever</span>
-            <p>A Lifetime of Devotion</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Lightbox Modal -->
-  <div class="modal-lightbox" id="imageModal" onclick="closeLightbox()">
-    <button class="modal-close" aria-label="Close image popup">&times;</button>
-    <img id="lightboxImg" src="" alt="Enlarged view" onclick="event.stopPropagation()" />
-  </div>
-
-  <!-- ==========================================================================
-       SECTION 7: RSVP (WHATSAPP FAST-CONFIRMATION)
+       SECTION 6: RSVP (WHATSAPP FAST-CONFIRMATION)
        ========================================================================== -->
   <section id="rsvp">
     <div class="container">
@@ -2171,7 +1834,7 @@
   </section>
 
   <!-- ==========================================================================
-       SECTION 8: GUESTBOOK & BLESSINGS BOARD
+       SECTION 7: GUESTBOOK & BLESSINGS
        ========================================================================== -->
   <section id="guestbook" style="background: #faf4ec;">
     <div class="container">
@@ -2224,7 +1887,7 @@
 
   <!-- Mobile Bottom Dock Navigation -->
   <nav class="mobile-bottom-dock" aria-label="Mobile Navigation">
-    <a href="#hero" class="dock-item">
+    <a href="#heroTrack" class="dock-item">
       <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
       <span>Mandir</span>
     </a>
@@ -2246,7 +1909,7 @@
     </a>
   </nav>
 
-  <!-- JAVASCRIPT: COMPLEX CANVAS ANIMATIONS & AUDIO ENGINE -->
+  <!-- JAVASCRIPT: SCROLL PARALLAX ENGINE, AUDIO, & CANVAS PARTICLES -->
   <script>
     const WEDDING_CONFIG = {
       groomName: "Arpit",
@@ -2257,7 +1920,52 @@
       pageUrl: "https://vinayv9.github.io/wedding-invite/"
     };
 
-    /* 1. BRASS TEMPLE BELL CHIME (HARMONIC OVERTONE SYNTHESIS) */
+    /* 1. SCROLL-DRIVEN PARALLAX TEMPLE ZOOM & NAME PERSPECTIVE ENGINE */
+    const heroTrack = document.getElementById("heroTrack");
+    const heroNames = document.getElementById("heroNames");
+    const templeRealImg = document.getElementById("templeRealImg");
+    const heroScrollCue = document.getElementById("heroScrollCue");
+
+    function updateParallax() {
+      if (!heroTrack) return;
+      const rect = heroTrack.getBoundingClientRect();
+      const trackHeight = heroTrack.offsetHeight;
+      const viewportHeight = window.innerHeight;
+      const scrolled = -rect.top;
+      const totalScrollable = trackHeight - viewportHeight;
+
+      if (totalScrollable <= 0) return;
+
+      // Progress normalized from 0.0 to 1.0
+      const progress = Math.min(1, Math.max(0, scrolled / totalScrollable));
+
+      // 1. Couple Names: Shrink, tilt backward in 3D perspective into sky, and fade
+      const nameTranslateY = -progress * 130;
+      const nameScale = Math.max(0.65, 1 - progress * 0.35);
+      const nameRotateX = progress * 24; // 3D tilt backward
+      const nameOpacity = Math.max(0, 1 - progress * 1.6);
+
+      heroNames.style.transform = `translate3d(0, ${nameTranslateY}px, 0) scale(${nameScale}) rotateX(${nameRotateX}deg)`;
+      heroNames.style.opacity = nameOpacity;
+
+      // 2. Photorealistic Ram Mandir Temple & Couple: Zoom In & Rise Up
+      const templeScale = 1 + progress * 0.42; // Zoom from 1.0 to 1.42
+      const templeTranslateY = -progress * 7;  // Rise up slightly into view
+      templeRealImg.style.transform = `scale(${templeScale}) translateY(${templeTranslateY}%)`;
+
+      // 3. Scroll Cue: Fade out immediately on scroll
+      if (heroScrollCue) {
+        heroScrollCue.style.opacity = Math.max(0, 1 - progress * 4);
+      }
+    }
+
+    window.addEventListener("scroll", () => {
+      requestAnimationFrame(updateParallax);
+    }, { passive: true });
+    window.addEventListener("resize", updateParallax);
+    updateParallax();
+
+    /* 2. BRASS TEMPLE BELL CHIME (MULTI-HARMONIC SYNTHESIZER) */
     let bellAudioCtx = null;
 
     function ringTempleBell() {
@@ -2295,7 +2003,7 @@
       });
     }
 
-    /* 2. WEDDING SHEHNAI & HARP MELODY */
+    /* 3. WEDDING SHEHNAI & HARP MELODY */
     let audioCtx = null;
     let isMusicPlaying = false;
     let musicInterval = null;
@@ -2337,7 +2045,7 @@
     }
     document.getElementById("musicToggleBtn").addEventListener("click", toggleMusic);
 
-    /* 3. LIVE COUNTDOWN */
+    /* 4. LIVE COUNTDOWN */
     function initCountdown() {
       const targetDate = new Date(WEDDING_CONFIG.weddingDate).getTime();
       const elDays = document.getElementById("cdDays");
@@ -2365,9 +2073,7 @@
       setInterval(update, 1000);
     }
 
-    /* 4. COMPLEX MULTI-LAYERED CANVAS ANIMATION SYSTEM
-       Includes: Real Marigold flowers, Rose petals, Golden light sparks, and Shimmer rays
-    */
+    /* 5. MULTI-TYPE TEMPLE CANVAS ANIMATION ENGINE */
     const canvas = document.getElementById("ambient-canvas");
     const ctx = canvas.getContext("2d");
     let particles = [];
@@ -2386,7 +2092,7 @@
       reset() {
         this.x = Math.random() * canvas.width;
         this.y = -25;
-        this.type = Math.random(); // 0-0.35: Rose petal, 0.35-0.7: Marigold flower, 0.7-1.0: Golden spark
+        this.type = Math.random(); // 0-0.4: Rose petal, 0.4-0.75: Marigold blossom, 0.75-1.0: Golden spark
         this.size = Math.random() * 8 + 5;
         this.speedY = Math.random() * 1.5 + 0.6;
         this.speedX = (Math.random() - 0.5) * 1.2;
@@ -2408,13 +2114,13 @@
         ctx.rotate((this.rotation * Math.PI) / 180);
         ctx.globalAlpha = this.opacity;
 
-        if (this.type < 0.35) {
+        if (this.type < 0.4) {
           // Deep Rose Petal
           ctx.fillStyle = "#c02638";
           ctx.beginPath();
           ctx.ellipse(0, 0, this.size, this.size * 1.45, Math.PI / 4, 0, 2 * Math.PI);
           ctx.fill();
-        } else if (this.type < 0.7) {
+        } else if (this.type < 0.75) {
           // Marigold Flower Blossom (Genda Phool)
           ctx.fillStyle = "#f59e0b";
           for (let i = 0; i < 6; i++) {
@@ -2439,7 +2145,7 @@
     }
 
     function initParticles() {
-      const count = window.innerWidth < 768 ? 26 : 50;
+      const count = window.innerWidth < 768 ? 26 : 48;
       particles = [];
       for (let i = 0; i < count; i++) {
         const p = new TempleParticle();
@@ -2467,7 +2173,7 @@
       }
     });
 
-    /* 5. ADD TO CALENDAR (.ICS) */
+    /* 6. ADD TO CALENDAR (.ICS) */
     function addToCalendar(title, description, location, dtStart, dtEnd) {
       const icsData = [
         "BEGIN:VCALENDAR",
@@ -2494,7 +2200,7 @@
       document.body.removeChild(link);
     }
 
-    /* 6. WHATSAPP RSVP DISPATCHER */
+    /* 7. WHATSAPP RSVP DISPATCHER */
     function sendViaWhatsApp() {
       const name = document.getElementById("guestName").value.trim();
       const phone = document.getElementById("guestPhone").value.trim();
@@ -2545,7 +2251,7 @@
       }
     }
 
-    /* 7. BLESSINGS BOARD (LOCAL STORAGE) */
+    /* 8. BLESSINGS BOARD (LOCAL STORAGE) */
     const STORAGE_KEY = "arpit_mrudula_temple_wishes";
     const defaultWishes = [
       { name: "Pooja & Anant Sharma", message: "May the divine grace of Lord Ganesha and the Almighty bless Arpit and Mrudula with boundless joy, harmony, and togetherness!", time: "Yesterday" },
@@ -2603,7 +2309,7 @@
       return div.innerHTML;
     }
 
-    /* 8. WHATSAPP SHARE FOR GUESTS & HOSTS */
+    /* 9. WHATSAPP SHARE FOR GUESTS & HOSTS */
     function shareInviteOnWhatsApp() {
       const url = WEDDING_CONFIG.pageUrl;
       const text = `🪔 *Sacred Wedding Invitation | Arpit & Mrudula*\n\n` +
@@ -2613,15 +2319,6 @@
         `✨ *View Temple Mandapam & RSVP:* \n${url}\n\n` +
         `_॥ शुभं भवतु ॥_`;
       window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, "_blank");
-    }
-
-    /* 9. LIGHTBOX */
-    function openLightbox(src) {
-      document.getElementById("lightboxImg").src = src;
-      document.getElementById("imageModal").classList.add("active");
-    }
-    function closeLightbox() {
-      document.getElementById("imageModal").classList.remove("active");
     }
 
     window.addEventListener("DOMContentLoaded", () => {
